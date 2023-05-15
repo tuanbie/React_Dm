@@ -26,7 +26,7 @@ const Food = () => {
   return (
     <div className='max-w-[1640px] m-auto px-4 py-12'>
       <h1 className='text-orange-600 font-bold text-4xl text-center'>
-        Top Rated Menu Items
+        Top Rated Singer
       </h1>
 
       {/* Filter Row */}
@@ -42,59 +42,81 @@ const Food = () => {
               All
             </button>
             <button
-              onClick={() => filterType('burger')}
+              onClick={() => filterType('sontungmtp')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Burgers
+              Sơn Tùng MTP
             </button>
             <button
-              onClick={() => filterType('pizza')}
+              onClick={() => filterType('mytam')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Pizza
+              Mỹ Tâm
             </button>
             <button
-              onClick={() => filterType('salad')}
+              onClick={() => filterType('haanhtuan')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Salads
+              Hà Anh Tuấn
             </button>
             <button
-              onClick={() => filterType('chicken')}
+              onClick={() => filterType('ducphuc')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              Chicken
+              Đức Phúc
+            </button>
+
+            <button
+              onClick={() => filterType('bichphuong')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
+            >
+              Bích Phương
+            </button>
+
+          
+            <button
+              onClick={() => filterType('jack')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
+            >
+              J97
             </button>
           </div>
         </div>
 
-        {/* Filter Price */}
+        {/* Rate */}
         <div>
           <p className='font-bold text-gray-700'>Filter Price</p>
           <div className='flex justify-between max-w-[390px] w-full'>
-            <button
-              onClick={() => filterPrice('$')}
+            {/* <button
+              onClick={() => filterPrice('✩')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $
+              ✩
+            </button> */}
+            <button
+              onClick={() => filterPrice('✩✩')}
+              className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
+            >
+              ✩✩
             </button>
             <button
-              onClick={() => filterPrice('$$')}
+              onClick={() => filterPrice('✩✩✩')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$
+              ✩✩✩
             </button>
             <button
-              onClick={() => filterPrice('$$$')}
+              onClick={() => filterPrice('✩✩✩✩')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$$
+              ✩✩✩✩
             </button>
+
             <button
-              onClick={() => filterPrice('$$$$')}
+              onClick={() => filterPrice('✩✩✩✩✩')}
               className='m-1 border-orange-600 text-orange-600 hover:bg-orange-600 hover:text-white'
             >
-              $$$$
+              ✩✩✩✩✩
             </button>
           </div>
         </div>
