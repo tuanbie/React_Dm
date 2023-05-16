@@ -21,6 +21,7 @@ const HeadlineCards = () => {
         />
       </div>
       {/* Card */}
+
       <div className='rounded-xl relative'>
         {/* Overlay */}
         <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
@@ -34,6 +35,7 @@ const HeadlineCards = () => {
           alt='/'
         />
       </div>
+      
       {/* Card */}
       <div className='rounded-xl relative'>
         {/* Overlay */}
