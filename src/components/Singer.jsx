@@ -1,11 +1,14 @@
 import React, { useState } from "react";
 import { data } from "../data/data.js";
-
+import { setSelectedImage } from "../pages/actions/imageActions.js";
+import { useDispatch } from "react-redux";
 const Food = ({ onImageSelect }) => {
   //   console.log(data);
   const [foods, setFoods] = useState(data);
+  const dispatch = useDispatch();
+
   const choseImage = (image) => {
-    onImageSelect(image);
+    dispatch(setSelectedImage(image));
   };
   //   Filter Type burgers/pizza/etc
   const filterType = (category) => {

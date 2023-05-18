@@ -68,7 +68,7 @@ const Navbar = () => {
         className={
           nav
             ? "fixed top-0 right-0 w-[500px] h-screen bg-white z-10 duration-300"
-            : <Button to={"/login"}>
+            : <Button to="/login">
           </Button>
         }
       >

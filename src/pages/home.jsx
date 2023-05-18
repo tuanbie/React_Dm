@@ -4,15 +4,15 @@ import HeadlineCards from "../components/HeadlineCards";
 import React, { useState } from 'react';
 
 function Home() {
-  const [selectedImage, setSelectedImage] = useState(null);
+  // const [getImgae, setSelectedImage] = useState(null);
 
-  const choseImage = (image) => {
-    setSelectedImage(image);
-  };
+  // const choseImage = (tm) => {
+  //   setSelectedImage(tm);
+  // };
   return (
     <div>
-      <Hero selectedImage={selectedImage} />
-      <Food onImageSelect={choseImage} />
+      <Hero/>
+      <Food />
       <HeadlineCards />
     </div>
   );
